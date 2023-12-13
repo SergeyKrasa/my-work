@@ -13,6 +13,10 @@ header{
     width: 937px;
     margin: 0 auto; 
 }
+a{
+    text-decoration: none;
+    display: inline-block;
+}
 .logo,
 .social{
     display: inline-block;
@@ -154,24 +158,27 @@ h5{
     padding: 81px 422px 81px 422px;
     text-align: center; 
 }
+.elements{
+    display: inline-block;
+}
 .image-logos{  
     width: 37px;
     height: 37px;
     margin-bottom: 24px;   
 }
-.feedback{
-    display: inline-block;  
-}
 .image-twiter{
+    text-decoration: none;
     width: 18px;
-    height: 18px;
+    height: 18px;    
 }
 .image-facebook{
+    text-decoration: none;
     width: 17px;
     height: 17px;
-    margin: 0px 22px 0px 22px;
+    margin: 0px 22px 0px 22px;   
 }
 .image-e-mail{
+    text-decoration: none;
     width: 17px;
-    height: 17px;
+    height: 17px;   
 }
