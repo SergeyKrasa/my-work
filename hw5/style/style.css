@@ -4,7 +4,10 @@
 body{
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-image: url('../img/Rectangle.png')          
+    background-image: url('../img/Rectangle.png'); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
 }
 .a{
     display: inline-block;    
@@ -12,13 +15,11 @@ body{
 .section-block{
     padding-left: 80px;
     padding-top: 70px;
-    width: 1728px;
-    height: 1117px;
     margin: 0 auto;
     border: 4px solid red;    
 }
 .header-container{
-    width: 1615px;
+   
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -30,11 +31,14 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row;
+    
+
 }
 
 .logo img{
     width: 156px;
     display: inline-block;
+   
 }
 .vertical-line{
     display: inline-block;
@@ -161,6 +165,7 @@ body h1{
     background: #D40D1F;
     padding: 0;
     margin-right: 50px;
+    text-decoration: none;
 }
 .button-text{
     color: #FFF;
@@ -176,19 +181,24 @@ body h1{
     margin: 0;
 }
 .episodes-button{
+    display: flex;
+    align-items: center;
     width: 271px;
     height: 64px;
     border-radius: 10px;
     border: 3px solid #FFF;
     background-color: transparent;
+    text-decoration: none;
+    justify-content: center;
 }
 .button-text-alt{
     width: 184px;
-    height: 32px;
     color: #FFF;
     font-family: Inter;
     font-size: 22px;
     font-weight: 500;
+   text-align: center;
+   
 }
 .text{
     width: 342px;
