@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #C42129;
+    background-size: 100%;
+    background-position: top;
+}
+header{
+    background-color: #FFF;
+    width: 100%;
+    height: 9%;
+    justify-content: space-between;
+    padding: 26px 0 24px 0;
+}
+.header-block{
+    width: 91%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    width: 102px;
+    height: 20px;
+    margin-right: 20%;
+}
+.navigation{ 
+    display: flex;
+    justify-content: center;
+    width: 42%;
+    white-space: nowrap;
+}
+.navigation li {
+    position: relative;
+}
+.navigation li:first-child a::after {
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 0.25rem;
+    background-color: #000;  /* Цвет линии */
+    position: absolute;
+    margin-top: 24px;
+    left: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;      
+}
+li {
+    margin-right: 95px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.8px;    
+}
+.icons{
+    margin-left: auto;
+}
+.glass-icon,
+.user-icon,
+.cart-icon{
+   width: 24px;
+   height: auto;
+   margin-left: 20px;
+}
+.wrapper{
+    width: 91%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0 0 5%; 
+    flex-wrap: wrap;
+    position: relative;
+}
+.blok-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+}
+h1{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 150px; 
+    margin: 150px 0 2px 0; 
+}
+p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    width: 560px;
+}
+.buttons{
+    width: 564px;
+    display: flex;
+    position: absolute;
+    top: 400px; /* Разместить .block-right сверху */
+    left: 5%;  
+}
+.Shop-now{
+    display: flex;
+    align-items: center;
+    width: 272px;
+    height: 52px;
+    padding: 14px 90px;
+    border-radius: 6px;
+    background: #000;
+    box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-right: 2.88rem;
+}
+.watch-video{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 170px;
+    height: 50px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.block-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 80px; /* Разместить .block-right сверху */
+    right: 4%; /* Отступ справа */
+}
+.ketle-rot,
+.red-rot{
+    margin-left: 5.75rem;  
+}
+.ketle-rot{
+    height: 542px;
+}
+.red-rot{
+    max-height: 400px; /* Максимальная высота изображения */
+    height: 100%; /* Занимает 100% доступной высоты */
+    width: auto; /* Сохраняет пропорции ширины */
+    position: relative;
+    height: 500px;
+    z-index: -1;
+    display: flex;
+    color: #91191E;
+    margin-left: -70px;  
+}
+.small-block{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 0;
+}
+.small{  
+    display: flex;
+    padding: 7px 13px;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 7px;
+    justify-content: center ;
+    margin-right: 16px;
+    margin-top: 142px;
+}
+.small:nth-child(2) {
+    background-color: white;
+}
+.circles{
+    display: flex; 
+    align-items: flex-end;
+    margin-left: 10px;
+    flex-direction: column; /* Изменено направление на вертикальное */
+    align-items: flex-start; /* Добавлено выравнивание по верхнему краю */
+    position: absolute;
+    top: 380px; /* Разместить .block-right сверху */
+    right: 4%; /* Отступ справа */ 
+}
+.circles input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 5px 0;  
+}
+
+@media (max-width: 1024px){
+    .wrapper{
+        flex-direction: column;
+    }
+     
+}
